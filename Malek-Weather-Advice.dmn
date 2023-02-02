@@ -45,14 +45,14 @@
     <dmn:informationRequirement id="_D54B6AE5-38F6-4B8C-9A90-F1FF4E6BB2A7">
       <dmn:requiredInput href="#_64AACFD7-1272-4C23-93A8-8CF1BF707E5A"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_39ACB521-987F-4714-8A8D-159DBE967082" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_39ACB521-987F-4714-8A8D-159DBE967082" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_0DF0F835-2AC8-44C1-8044-5534A041BE1F">
         <dmn:inputExpression id="_D619EAA3-0E3D-4ED4-994B-A9F42145C8BB" typeRef="number">
           <dmn:text>Weather.rainForecast</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_AAF8287A-7133-40F9-B20D-CCFCE116EADA">
-        <dmn:inputExpression id="_A46DEE65-1B6A-4A52-A643-D50CE0432EC8" typeRef="temperature">
+        <dmn:inputExpression id="_A46DEE65-1B6A-4A52-A643-D50CE0432EC8" typeRef="string">
           <dmn:text>Weather.temperature</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -82,7 +82,7 @@
       </dmn:rule>
       <dmn:rule id="_596E342D-19F2-4F19-94E6-D5A0E1E18963">
         <dmn:inputEntry id="_D8F9A2DF-7E18-49B6-BE0F-98F0B416AC2A">
-          <dmn:text>[0..21]</dmn:text>
+          <dmn:text>[0..20)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_71F86ED3-7775-4F02-A734-49AA0CAD4785">
           <dmn:text>"cold"</dmn:text>
@@ -99,7 +99,7 @@
       </dmn:rule>
       <dmn:rule id="_8889BDDB-387E-4659-9935-F1973AFB47D6">
         <dmn:inputEntry id="_FA4D448A-C958-4075-9A1C-35785BFB1E2B">
-          <dmn:text>[21..80]</dmn:text>
+          <dmn:text>[20..80)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_80AAD476-32F0-42FA-B2CB-F5343C6FC6C3">
           <dmn:text>-</dmn:text>
