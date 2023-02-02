@@ -45,35 +45,35 @@
     <dmn:informationRequirement id="_D54B6AE5-38F6-4B8C-9A90-F1FF4E6BB2A7">
       <dmn:requiredInput href="#_64AACFD7-1272-4C23-93A8-8CF1BF707E5A"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_39ACB521-987F-4714-8A8D-159DBE967082" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_39ACB521-987F-4714-8A8D-159DBE967082" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_0DF0F835-2AC8-44C1-8044-5534A041BE1F">
-        <dmn:inputExpression id="_D619EAA3-0E3D-4ED4-994B-A9F42145C8BB" typeRef="number">
+        <dmn:inputExpression id="_DD04FCA2-6EE0-412C-A10A-7AF9C890BD09" typeRef="number">
           <dmn:text>Weather.rainForecast</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_AAF8287A-7133-40F9-B20D-CCFCE116EADA">
-        <dmn:inputExpression id="_A46DEE65-1B6A-4A52-A643-D50CE0432EC8" typeRef="temperature">
+        <dmn:inputExpression id="_41449B20-A511-44B3-8885-53A3C5BF3981" typeRef="string">
           <dmn:text>Weather.temperature</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_6FF1B7C5-B35C-4886-A1AD-40B0C4D710DC">
-        <dmn:inputExpression id="_8CE39540-8AA5-4D08-93D8-A423D0CB05A2" typeRef="boolean">
+        <dmn:inputExpression id="_7E213085-D33E-4FF0-B025-125CA8C3ED69" typeRef="boolean">
           <dmn:text>Weather.stormAlert</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_C24B5E75-609F-4D72-A36E-FD7F5C2F5EEC"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_52846234-E786-4914-BB13-6847511554AE">
-        <dmn:inputEntry id="_3C8DAE1D-1A9D-4FB5-97F4-3A2370D8FAF5">
+        <dmn:inputEntry id="_33D7E0B1-66BE-43A9-BA32-9EF0A85D1C16">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_1DD13651-A9FA-4C72-B68E-76E2BCFF69F0">
+        <dmn:inputEntry id="_23425D2F-1A53-4A6A-8F2B-089A7EED8FDE">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_6C6C0D0E-ADAF-4563-9FE8-3ACDC1532B82">
+        <dmn:inputEntry id="_F1319E12-CCD6-47C0-958A-C28F3BE2D0B2">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_E3E290FB-AA40-4670-A8A8-3AACA1158C38">
+        <dmn:outputEntry id="_6A2DD166-32C4-49F5-A65C-69F2DA030032">
           <dmn:text>"STAY HOME !!! "</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -81,16 +81,16 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_596E342D-19F2-4F19-94E6-D5A0E1E18963">
-        <dmn:inputEntry id="_D8F9A2DF-7E18-49B6-BE0F-98F0B416AC2A">
-          <dmn:text>[0..21]</dmn:text>
+        <dmn:inputEntry id="_75B804BA-7299-4712-BD40-B42040E77827">
+          <dmn:text>[0..20)</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_71F86ED3-7775-4F02-A734-49AA0CAD4785">
+        <dmn:inputEntry id="_6A83C2D3-6ADA-4922-8DA8-1806B27F401A">
           <dmn:text>"cold"</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_EEAEECB5-622E-4806-A638-EB5BF1E5143F">
+        <dmn:inputEntry id="_165ED38A-BB2F-4AD9-8BFD-BFA940421E77">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_849DFE92-0498-493D-B207-60824725D700">
+        <dmn:outputEntry id="_D836079F-3300-4E71-85DF-0FB3BB64D539">
           <dmn:text>"cold Day. Enjoy the weather!"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -98,16 +98,16 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_8889BDDB-387E-4659-9935-F1973AFB47D6">
-        <dmn:inputEntry id="_FA4D448A-C958-4075-9A1C-35785BFB1E2B">
-          <dmn:text>[21..80]</dmn:text>
+        <dmn:inputEntry id="_4906A80B-99A5-47E8-89CF-9AABF9359055">
+          <dmn:text>[20..80)</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_80AAD476-32F0-42FA-B2CB-F5343C6FC6C3">
+        <dmn:inputEntry id="_246D7D19-611B-4BDB-AA29-C540B583E319">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_532B6D3A-01F3-477C-9AAB-4E0BF9879129">
+        <dmn:inputEntry id="_B294A4F1-8AE9-49DE-8F9B-CE0A34F93615">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_3BDBB830-A5BA-4BEF-BB10-CA95FA37D4BA">
+        <dmn:outputEntry id="_9147688D-8E3B-48C7-811C-327C01F69D4F">
           <dmn:text>"Risk of rain. May need an umbrella"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -115,17 +115,17 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_A774F9D0-2AC8-49F1-B2EA-8CF39A45343C">
-        <dmn:inputEntry id="_1DE7E425-C296-4E4D-8AA2-D583E5CF6FF4">
-          <dmn:text>[81..100]</dmn:text>
+        <dmn:inputEntry id="_664115D7-C42B-4BEC-BD49-7B3D90832D5E">
+          <dmn:text>[80..100]</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_4E8E539E-7565-4F5C-9564-79B7E808B93C">
+        <dmn:inputEntry id="_D7CE80E2-21DA-44D3-882E-1DC0653D73FF">
           <dmn:text>-
 </dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_2575A09C-3F20-4753-A6B2-A0AB3CAEFA67">
+        <dmn:inputEntry id="_96BCA0DF-A2B1-4430-8AC0-E958A3743D19">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_F77566D4-CBED-49F2-AC94-74F8EEA67836">
+        <dmn:outputEntry id="_81ACE2A2-7983-4151-A070-FF1BF10B22FC">
           <dmn:text>"Rainy day. Take an umbrella"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -193,7 +193,7 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_EED5938E-4FE3-4CF6-8230-3D255D922E06" dmnElementRef="_EED5938E-4FE3-4CF6-8230-3D255D922E06">
         <di:waypoint x="321" y="246.31578947368422"/>
-        <di:waypoint x="505" y="167"/>
+        <di:waypoint x="505" y="192"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_D54B6AE5-38F6-4B8C-9A90-F1FF4E6BB2A7-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_D54B6AE5-38F6-4B8C-9A90-F1FF4E6BB2A7">
         <di:waypoint x="320" y="416.3157894736842"/>
