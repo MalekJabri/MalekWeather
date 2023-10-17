@@ -23,6 +23,7 @@
     <dmn:variable id="_6B58DBA6-00BC-4AE0-A95D-89B47995D7DD" name="Name" typeRef="string"/>
   </dmn:inputData>
   <dmn:decision id="_E233862D-7749-49B0-BCF0-84BC925040E2" name="Daily-Advice">
+    <dmn:description>test</dmn:description>
     <dmn:extensionElements/>
     <dmn:variable id="_41D7F275-E77D-43A3-ACFF-8989EE6C33F8" name="Daily-Advice" typeRef="string"/>
     <dmn:informationRequirement id="_0AD31CFC-4092-4383-8DA0-E57430048AA8">
